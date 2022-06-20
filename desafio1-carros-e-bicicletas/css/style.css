@@ -1,0 +1,46 @@
+:root {
+  --cor-amarelo1: #febe01;
+  --cor-amarelo2: #332200;
+  --preto: #111;
+  --cinza: #b2b2b2;
+}
+
+body {
+  font-family: Arial;
+  margin: 50px;
+}
+
+.item {
+  background-color: var(--preto);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+  margin: 0px;
+}
+
+p {
+  color: var(--cinza);
+}
+
+span {
+  color: var(--cor-amarelo1);
+}
+
+a {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--cor-amarelo1);
+  padding: 10px;
+  border: 0px;
+  font-size: 15px;
+  color: var(--cor-amarelo2);
+  text-decoration: none;
+}
