@@ -87,6 +87,7 @@ img {
   display: grid;
   align-content: center;
   justify-items: end;
+  gap: 1rem;
 }
 
 .introducao::before {
@@ -97,6 +98,11 @@ img {
   position: absolute;
   top: 2rem;
   right: -2rem;
+}
+
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .botao {
@@ -119,6 +125,7 @@ img {
   text-align: right;
   align-self: center;
   background-image: url(/imagens/onda.svg);
+  /* word-break: break-all; */
 }
 
 .vantagens-itens {
@@ -152,4 +159,52 @@ img {
   width: 100%;
   text-align: center;
   padding: 2.5rem;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 2rem;
+    margin-top: 1.25rem;
+  }
+
+  header {
+    gap: 2rem;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .introducao::before {
+    display: none;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
