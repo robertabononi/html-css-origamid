@@ -2,33 +2,39 @@
   --cinza: #f7f7f7;
   --cinza-escuro: #c6c6c6;
   --vermelho: #e21;
+  --vermelho-escuro: #900;
 }
 
 * {
   border: 0;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial;
   background: var(--cinza);
   display: grid;
-  gap: 60px;
+  gap: 3.75rem;
   justify-items: center;
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 
-h1 {
-  text-align: center;
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.75rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
 }
 
@@ -41,17 +47,23 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
 }
 
 .menu-item {
   background: #fff;
-  border-radius: 4px;
-  padding: 15px 30px;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  border: 0.2rem solid transparent;
+}
+
+.menu-item:hover {
+  border-color: var(--vermelho);
 }
 
 .menu-item-link {
+  display: block;
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
@@ -60,7 +72,7 @@ img {
 .conteudo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 1000px;
+  max-width: 62.5rem;
 }
 
 .uppercase {
@@ -69,7 +81,7 @@ img {
 
 .introducao {
   background: #fff;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: right;
   position: relative;
   display: grid;
@@ -77,46 +89,58 @@ img {
   justify-items: end;
 }
 
-.detalhe {
-  width: 60px;
-  height: 4px;
-  background: var(--vermelho);
+.introducao::before {
+  content: "";
+  background-color: var(--vermelho);
+  width: 3.75rem;
+  height: 0.25rem;
   position: absolute;
-  top: 30px;
-  right: -30px;
+  top: 2rem;
+  right: -2rem;
 }
 
 .botao {
   background: var(--vermelho);
   color: #fff;
-  padding: 15px 30px;
-  border-radius: 4px;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+.botao:hover {
+  background: var(--vermelho-escuro);
+}
+
 .subtitulo {
-  font-size: 64px;
-  padding: 40px;
+  font-size: 4rem;
+  padding: 2.5rem;
   color: var(--cinza-escuro);
   text-align: right;
   align-self: center;
-}
-
-.vantagens {
-  background: #fff;
-  padding: 40px;
+  background-image: url(/imagens/onda.svg);
 }
 
 .vantagens-itens {
   list-style: none;
+  background: #fff;
+  padding: 2.5rem;
+}
+
+.vantagens-item:nth-child(odd) {
+  background: var(--cinza);
 }
 
 .vantagens-item {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px 20px;
-  padding: 20px;
+  gap: 0.6rem 1.25rem;
+  padding: 1.25rem;
+  border-left: 0.4rem solid transparent;
+}
+
+.vantagens-item:hover {
+  border-color: var(--vermelho);
 }
 
 .vantagens-item p {
@@ -127,6 +151,5 @@ img {
   background: #fff;
   width: 100%;
   text-align: center;
-  padding: 40px;
-  box-sizing: border-box;
+  padding: 2.5rem;
 }
