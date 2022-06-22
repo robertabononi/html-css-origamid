@@ -124,7 +124,7 @@ img {
   color: var(--cinza-escuro);
   text-align: right;
   align-self: center;
-  background-image: url(../imagens/onda.svg);
+  background-image: url(./imagens/onda.svg);
   /* word-break: break-all; */
 }
 
