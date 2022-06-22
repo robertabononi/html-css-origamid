@@ -10,13 +10,45 @@
 
 :root {
   --rosa: #b91745;
+  --preto: #141414;
 }
 
 body {
   font-family: "Fira Sans", sans-serif;
+  margin: 2.5rem 8.75rem;
+  display: grid;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+.menu {
+  align-self: center;
+  justify-self: end;
+}
+
+.menu-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 3.75rem;
+  color: var(--preto);
+}
+
+main article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
