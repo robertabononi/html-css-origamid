@@ -15,3 +15,8 @@
 body {
   font-family: "Fira Sans", sans-serif;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
