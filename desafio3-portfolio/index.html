@@ -7,44 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roberta - Desenvolvedora Front-end</title>
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <section>
-      <a href="#apresentacao">
-        <img src="./img/marca.svg" alt="Lobo, Logotipo">
-      </a>
-    </section>
+    <img src="./img/marca.svg" alt="Lobo, Logotipo">
 
-    <nav class="menu primária">
-      <ul class="menu-links">
-        <li>
-          <a href="#experiencia" class="menu-link">Experiência</a>
-        </li>
-        <li>
-          <a href="#formacao" class="menu-link">Formação</a>
-        </li>
-        <li>
-          <a href="#contato" class="menu-link">Contato</a>
-        </li>
+    <nav>
+      <ul class="header__menu">
+        <li><a href="#experiencia" class="header__menu__link">Experiência</a></li>
+        <li><a href="#formacao" class="header__menu__link">Formação</a></li>
+        <li><a href="#contato" class="header__menu__link">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <article id="apresentacao">
-      <section>
-        <img src="./img/perfil.jpg" alt="Lobo">
-      </section>
-      <section>
-        <h1>Desenvolvedora Front-end & UX/UI Designer</h1>
-        <p>Localizada em Santo André 🌆</p>
-      </section>
-    </article>
+  <main class="introducao">
+    <img src="./img/perfil.jpg" alt="Lobo cinza" class="introducao__imagem">
+    <section>
+      <h1>Desenvolvedora <br>Front-end &<br>UX/UI Designer</h1>
+      <p>Localizada em Santo André 🌆</p>
+    </section>
 
-    <article id="experiencia">
+    <!-- <article id="experiencia">
       <section>
         <h2>Experiência</h2>
       </section>
@@ -183,7 +169,7 @@
           <li>@origamid.cursos</li>
         </ul>
       </section>
-    </article>
+    </article> -->
   </main>
 
   <footer>
